@@ -71,7 +71,7 @@ public class ShopService {
 		root.addContent(pWord);
 		doc.setRootElement(root);
 		boolean loggedin = ServerRequests.SendRequestWithResponse(doc, "login") == 200;
-		session.setAttribute("loggedin", loggedin);
+		
 		return loggedin;
 
 	}
